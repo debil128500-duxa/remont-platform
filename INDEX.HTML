@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Механизированная штукатурка в Новосибирске | НСК-Штукатурка-Про</title>
+
+<!-- МИКРОРАЗМЕТКА ДЛЯ ПОИСКОВИКОВ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "НСК-Штукатурка-Про",
+  "image": "здесь_ссылка_на_логотип_или_фото_бригады.jpg",
+  "telephone": "+79000000000",
+  "priceRange": "От 500 ₽/м²",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Новосибирск",
+    "addressCountry": "RU"
+  },
+  "areaServed": "Новосибирск и Новосибирская область",
+  "url": "здесь_адрес_вашего_сайта",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 55.0084,
+    "longitude": 82.9357
+  },
+  "openingHours": "Mo-Su 08:00-22:00"
+}
+</script>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;color:#333;line-height:1.8}
+header{background:#2c3e50;color:#fff;padding:15px 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 5px rgba(0,0,0,.1)}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.header-wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.logo{font-size:1.3rem;font-weight:bold;color:#f39c12}
+.phone{color:#fff;text-decoration:none;font-weight:bold;font-size:1.1rem}
+.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070') center/cover;color:#fff;padding:100px 0 80px;text-align:center}
+.hero h1{font-size:2.2rem;margin-bottom:15px}
+.hero p{font-size:1.1rem;margin-bottom:30px;opacity:0.9}
+.btn{display:inline-block;background:#f39c12;color:#fff;padding:14px 28px;text-decoration:none;border-radius:5px;font-weight:bold;border:none;cursor:pointer;font-size:1rem;transition:.3s}
+.btn:hover{background:#e67e22;transform:translateY(-2px)}
+section{padding:60px 0}
+h2{text-align:center;font-size:1.9rem;margin-bottom:40px;color:#2c3e50;position:relative}
+h2::after{content:'';display:block;width:80px;height:3px;background:#f39c12;margin:15px auto 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.card{background:#fff;padding:25px;border-radius:10px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.05);border:1px solid #eee;transition:.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(0,0,0,.1)}
+.card h3{color:#f39c12;margin-bottom:10px;font-size:1.1rem}
+.dark-card{background:#2c3e50;color:#fff;padding:30px;border-radius:10px;text-align:center;transition:.3s}
+.dark-card:hover{background:#f39c12;transform:scale(1.02)}
+.dark-card b{display:block;font-size:1.3rem;margin-bottom:8px}
+
+/* КАЛЬКУЛЯТОР */
+.calc{background:#f8f9fa;padding:60px 0}
+.calc-box{max-width:600px;margin:0 auto;background:#fff;padding:30px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.calc-box label{display:block;margin-bottom:8px;font-weight:bold;color:#2c3e50}
+.calc-box input,.calc-box select{width:100%;padding:14px;margin-bottom:20px;border:2px solid #e0e0e0;border-radius:8px;font-size:1.05rem;transition:.3s}
+.calc-box input:focus,.calc-box select:focus{border-color:#f39c12;outline:none}
+.error-msg{color:#e74c3c;font-size:.9rem;display:none;margin-bottom:10px}
+.calc-result{background:#2c3e50;color:#fff;padding:25px;border-radius:10px;text-align:center;margin-top:20px;display:none}
+.calc-result.show{display:block}
+.calc-result .price{font-size:2.2rem;font-weight:bold;color:#f39c12;margin:10px 0}
+.calc-btn{width:100%;margin-top:15px}
+
+/* ПОРТФОЛИО */
+.portfolio{background:#fff}
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;margin-top:30px}
+.portfolio-item{position:relative;overflow:hidden;border-radius:10px}
+.portfolio-item img{width:100%;height:220px;object-fit:cover;transition:.5s}
+.portfolio-item:hover img{transform:scale(1.1)}
+.portfolio-caption{position:absolute;bottom:0;left:0;right:0;background:rgba(44, 62, 80, 0.9);color:#fff;padding:15px}
+
+/* FAQ */
+.faq-item{border:1px solid #eee;border-radius:8px;margin-bottom:15px;overflow:hidden}
+.faq-question{background:#f8f9fa;padding:18px 20px;font-weight:bold;color:#2c3e50;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-question::after{content:'▼';transition:.3s}
+.faq-question.active::after{transform:rotate(180deg)}
+.faq-answer{display:none;padding:20px;color:#555;line-height:1.7;border-top:1px solid #eee}
+
+.price-box{background:#f39c12;color:#fff;padding:35px;border-radius:12px;text-align:center;display:inline-block}
+.price-big{font-size:2.8rem;font-weight:bold}
+.contact-btn{display:inline-block;background:#2c3e50;color:#fff;padding:15px 25px;border-radius:8px;text-decoration:none;margin:8px;font-weight:bold;transition:.3s}
+.contact-btn:hover{background:#f39c12;transform:translateY(-2px)}
+footer{background:#1a252f;color:#bcccdc;text-align:center;padding:30px 0;font-size:.9rem}
+footer .footer-legal{margin-top:15px;font-size:.8rem;color:#777}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container header-wrap">
+<div class="logo">🏗️ НСК-Штукатурка-Про</div>
+<div>
+<a href="tel:+79000000000" class="phone">📞 +7 (900) 000-00-00</a>
+<a href="#contacts" class="contact-btn" style="font-size:.9rem;padding:10px 15px;">Заказать звонок</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Механизированная штукатурка в Новосибирске</h1>
+<p>Профессионально. Быстро. С гарантией 5 лет. Работаем по договору.</p>
+<a href="#calc" class="btn">🧮 Рассчитать стоимость</a>
+</div>
+</section>
+
+<!-- КАЛЬКУЛЯТОР -->
+<section class="calc" id="calc">
+<div class="container">
+<h2>Рассчитайте стоимость онлайн</h2>
+<div class="calc-box">
+<label for="area">Площадь стен (м²):</label>
+<input type="number" id="area" placeholder="Например, 100" min="1">
+<div class="error-msg" id="areaError">Введите площадь стен</div>
+
+<label for="areaDoors">Площадь окон и дверей (м²) для вычета:</label>
+<input type="number" id="areaDoors" placeholder="Например, 15" min="0" value="0">
+
+<label for="layer">Толщина слоя:</label>
+<select id="layer">
+<option value="1">До 20 мм (базовая цена)</option>
+<option value="1.2">20–30 мм (+20%)</option>
+<option value="1.4">Более 30 мм (+40%)</option>
+</select>
+
+<label for="type">Тип объекта:</label>
+<select id="type">
+<option value="500">Квартира (500 ₽/м²)</option>
+<option value="550">Дом / Коттедж (550 ₽/м²)</option>
+<option value="600">Коммерческое помещение (600 ₽/м²)</option>
+</select>
+
+<button class="btn calc-btn" onclick="calculate()">Рассчитать</button>
+
+<div class="calc-result" id="result">
+<div>Примерная стоимость:</div>
+<div class="price" id="totalPrice">0 ₽</div>
+<div style="font-size:.9rem;margin-top:8px;color:#bcccdc">Точная цена — после бесплатного замера</div>
+<div style="display:flex;gap:10px;justify-content:center;margin-top:15px;flex-wrap:wrap">
+<a href="https://t.me/your_username" id="orderBtnTelegram" class="btn" style="background:#0088cc">📩 Точный расчет в Telegram</a>
+<a href="https://max.ru/your_username" id="orderBtnMax" class="btn" style="background:#e74c3c">💬 Точный расчет в МАКС</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Почему выбирают нас</h2>
+<div class="grid">
+<div class="card"><h3>💰 Выгодная цена</h3><p>От 500 руб/м². Честные цены без скрытых доплат. Фиксируем смету в договоре.</p></div>
+<div class="card"><h3>⚡ Высокая скорость</h3><p>Механизированная штукатурка в 5 раз быстрее ручной. 100 м² за 1 день.</p></div>
+<div class="card"><h3>✨ Идеальное качество</h3><p>Ровные стены под обои и покраску без шпаклевки. Используем лазерные нивелиры.</p></div>
+<div class="card"><h3>🛡️ Гарантия 5 лет</h3><p>Официальная гарантия на все виды работ по договору. Устраняем трещины бесплатно.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ПОРТФОЛИО -->
+<section class="portfolio">
+<div class="container">
+<h2>Наши работы в Новосибирске</h2>
+<div class="portfolio-grid">
+<div class="portfolio-item">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600" alt="Штукатурка квартиры">
+<div class="portfolio-caption">Квартира 62 м², ЖК "Европейский Берег". Срок: 3 дня.</div>
+</div>
+<div class="portfolio-item">
+<img src="https://images.unsplash.com/photo-1560323266-9ccf1c9932dc?q=80&w=600" alt="Штукатурка дома">
+<div class="portfolio-caption">Частный дом 180 м², п. Краснообск. Срок: 5 дней.</div>
+</div>
+<div class="portfolio-item">
+<img src="https://images.unsplash.com/photo-1504198458649-312866e282cd?q=80&w=600" alt="Штукатурка офиса">
+<div class="portfolio-caption">Офис 250 м², ул. Ленина. Срок: 4 дня.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:#f8f9fa">
+<div class="container">
+<h2>Работаем с любыми объектами</h2>
+<div class="grid">
+<div class="dark-card">🏢<br><b>Квартиры</b><br><small>Новостройки и вторичка</small></div>
+<div class="dark-card">🏠<br><b>Дома</b><br><small>Частные дома и таунхаусы</small></div>
+<div class="dark-card">🏡<br><b>Коттеджи</b><br><small>Загородная недвижимость</small></div>
+<div class="dark-card">🏬<br><b>Коммерция</b><br><small>Офисы, магазины, склады</small></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container" style="text-align:center">
+<h2>Опыт и надежность</h2>
+<p style="font-size:1.1rem;max-width:700px;margin:0 auto 30px">Занимаемся механизированной штукатуркой с 2012 года. Работаем слаженной бригадой на профессиональном оборудовании (PFT, Kaleta).</p>
+<div class="grid" style="max-width:800px;margin:0 auto">
+<div class="card"><div style="font-size:2.5rem;font-weight:bold;color:#f39c12">14+</div>лет опыта</div>
+<div class="card"><div style="font-size:2.5rem;font-weight:bold;color:#f39c12">500+</div>объектов</div>
+<div class="card"><div style="font-size:2.5rem;font-weight:bold;color:#f39c12">5 лет</div>гарантия</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="background:#f8f9fa">
+<div class="container">
+<h2>Частые вопросы</h2>
+<div class="faq">
+<div class="faq-item">
+<div class="faq-question">Мешаете ли вы соседям шумом от штукатурной станции?</div>
+<div class="faq-answer">Самые шумные работы (замес смеси) занимают около 30 минут. Мы начинаем их не раньше 10:00 и заканчиваем до 19:00 в будни, соблюдая закон о тишине. Сами процессы нанесения и разравнивания смеси проходят почти бесшумно.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Нужно ли выносить мебель из комнаты?</div>
+<div class="faq-answer">Достаточно сдвинуть мебель в центр комнаты и накрыть плотной пленкой. Мы сами укроем полы и защитим окна. После окончания работ соберем крупный мусор.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Сколько сохнет штукатурка?</div>
+<div class="faq-answer">Технологическое высыхание для поклейки обоев — 7–10 дней. Для покраски — 14–21 день (в зависимости от влажности и толщины слоя). Мы даем четкие рекомендации по каждому объекту.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Что с электрикой и штроблением?</div>
+<div class="faq-answer">Штробление под проводку не входит в базовую стоимость штукатурки. Мы можем выполнить его как доп. услугу или аккуратно обойти существующие выводы.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:#2c3e50;color:#fff;text-align:center">
+<div class="container">
+<h2 style="color:#fff">Стоимость работ</h2>
+<div class="price-box">
+<div class="price-big">от 500 ₽/м²</div>
+<p style="margin-top:10px">Точная смета — бесплатно после замера в день обращения</p>
+</div>
+</div>
+</section>
+
+<section id="contacts" style="text-align:center">
+<div class="container">
+<h2>Свяжитесь с нами</h2>
+<p style="margin-bottom:25px">Ответим на вопросы и рассчитаем стоимость за 15 минут</p>
+<a href="tel:+79000000000" class="contact-btn">📞 Позвонить</a>
+<a href="https://t.me/your_username" class="contact-btn" style="background:#0088cc">✈️ Telegram</a>
+<a href="https://max.ru/your_username" class="contact-btn" style="background:#e74c3c">💬 МАКС</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>© 2026 НСК-Штукатурка-Про. Механизированная штукатурка в Новосибирске и области.</p>
+<div class="footer-legal">ИНН: здесь_будет_ваш_инн | Работаем по договору | Смета не меняется в процессе работ</div>
+</div>
+</footer>
+
+<script>
+function calculate(){
+// Сброс ошибок
+document.getElementById('areaError').style.display = 'none';
+
+const area=parseFloat(document.getElementById('area').value);
+const areaDoors=parseFloat(document.getElementById('areaDoors').value);
+const layer=parseFloat(document.getElementById('layer').value);
+const price=parseFloat(document.getElementById('type').value);
+
+if(!area || area <= 0){
+    document.getElementById('areaError').style.display = 'block';
+    return;
+}
+
+// Расчет чистой площади
+const netArea = area - areaDoors;
+if(netArea <= 0){
+    document.getElementById('areaError').textContent = 'Чистая площадь должна быть больше нуля';
+    document.getElementById('areaError').style.display = 'block';
+    return;
+}
+
+const total=netArea * price * layer;
+document.getElementById('totalPrice').textContent=total.toLocaleString('ru-RU')+' ₽';
+document.getElementById('result').classList.add('show');
+
+// Формируем сообщения для мессенджеров
+const msgTg=encodeURIComponent('Здравствуйте! Мне нужна механизированная штукатурка.\nПлощадь: '+area+' м² (чистая: '+netArea+' м²).\nТип: '+document.getElementById('type').options[document.getElementById('type').selectedIndex].text+'\nТолщина: '+document.getElementById('layer').options[document.getElementById('layer').selectedIndex].text+'\nОриентировочная стоимость: '+total.toLocaleString('ru-RU')+' ₽. Когда сможете сделать замер?');
+
+const msgMax=encodeURIComponent('Добрый день! Расчет со сайта:\nОбъект: '+document.getElementById('type').options[document.getElementById('type').selectedIndex].text+'\nПлощадь: '+netArea+' м²\nСтоимость: '+total.toLocaleString('ru-RU')+' ₽\nПрошу связаться для уточнения деталей.');
+
+document.getElementById('orderBtnTelegram').href='https://t.me/your_username?text='+msgTg;
+document.getElementById('orderBtnMax').href='https://max.ru/your_username?text='+msgMax;
+}
+
+// Аккордеон для FAQ
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const faqItem = event.target.parentNode;
+        faqItem.classList.toggle('active');
+        const answer = faqItem.querySelector('.faq-answer');
+        if (faqItem.classList.contains('active')) {
+            answer.style.display = 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
